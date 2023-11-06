@@ -11977,7 +11977,7 @@ textarea.form-control-lg {
   }
 }
 body {
-  background: #000;
+  background: #141414;
   /* forbid horizontal scoll */
   overflow-x: hidden;
 }
@@ -11986,6 +11986,11 @@ body::before {
   display: block;
   content: "";
   height: 80px;
+}
+
+footer a {
+  color: #808080;
+  text-decoration: none;
 }
 
 .box {
