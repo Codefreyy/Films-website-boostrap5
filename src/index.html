@@ -17,15 +17,18 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="/src/main.css" />
+    <link rel="stylesheet" href="/src/styles/main.css" />
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </head>
   <body>
     <header>
       <nav class="navbar navbar-expand-lg bg-black navbar-dark fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/src/index.html">
+          <a class="navbar-brand d-none d-md-inline" href="/src/index.html">
             <img src="/assets/imgs/netflix.png" alt="netflix" width="120em" />
+          </a>
+          <a class="navbar-brand d-incline d-md-none" href="/src/index.html">
+            <img src="/assets/imgs/favicon.png" alt="netflix" width="40em" />
           </a>
           <button
             class="navbar-toggler"
@@ -104,7 +107,7 @@
         <div class="container">
           <!-- title and rating -->
           <div class="row mb-4">
-            <div class="col-lg-7 col-md-12 col-sm-12">
+            <div class="col-lg-8 col-md-12 col-sm-12">
               <h1>The Shawshank Redemption</h1>
               <div>
                 <span class="badge text-bg-secondary">1994</span>
@@ -114,19 +117,22 @@
                 <span class="badge text-bg-secondary">Crime</span>
               </div>
             </div>
-            <div class="col-lg-5 col-md-6 col-sm-8">
+            <div class="col-lg-4 col-md-6 col-sm-8">
               <div class="row">
                 <div class="col text-lg-end">
-                  <div>IMDB RATING</div>
-                  <div>9.3/10</div>
+                  <div class="small text-secondary">IMDB RATING</div>
+                  <div>
+                    <i class="bi bi-star-fill text-primary"></i
+                    ><span class="px-2 text-emphasize d-inline-block">9.3</span
+                    >/ 10
+                  </div>
                 </div>
                 <div class="col text-lg-end">
-                  <div>Your Rating</div>
-                  <div>Rate</div>
-                </div>
-                <div class="col text-lg-end">
-                  <div>Popularity</div>
-                  <div>104</div>
+                  <div class="small text-secondary">POPULARITY</div>
+                  <div>
+                    <i class="bi bi-graph-down-arrow text-primary"></i
+                    ><span class="px-2 text-emphasize d-inline-block">104</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -146,7 +152,9 @@
                   <div class="row">
                     <div>
                       <span class="text-secondary">Director: </span>
-                      <span class="text-light"> Frank Darabont</span>
+                      <a href="/src/director.html">
+                        <span class="text-light">Frank Darabont</span></a
+                      >
                     </div>
 
                     <div>
@@ -161,9 +169,10 @@
                     </div>
                     <div>
                       <span class="text-secondary">Stars: </span>
-                      <span class="text-light"
-                        >Tim RobbinsMorgan, FreemanBob Gunton</span
-                      >
+                      <a href="/src/actor.html">
+                        <span class="text-light">Tim RobbinsMorgan</span>
+                      </a>
+                      <span>,FreemanBob Gunton</span>
                     </div>
                   </div>
                   <div class="row">
@@ -284,8 +293,10 @@
         console.log("LG")
       } else if (windowWidth >= 768) {
         console.log("MD")
+      } else if (windowWidth >= 576) {
+        console.log("sm")
       } else {
-        console.log("SM")
+        console.log("none")
       }
     }
 

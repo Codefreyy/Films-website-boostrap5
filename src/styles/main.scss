@@ -1,5 +1,5 @@
 // customize theme color
-$primary: #ff0266;
+$primary: #E83F3F;
 $info: #f097c7;
 $dropdown-link-color: #e5e5e5;
 $dropdown-link-hover-color: #000;
@@ -33,17 +33,23 @@ footer {
     }
 }
 
-.box {
-    border:1px solid #000;
-    background-color: skyblue;
+.text-emphasize {
+    font-family: 'Comfortaa', 'sans-serif';
+    font-weight: 800;
+    transform: scale(1.3);
 }
 
-.box2 {
-    border:1px solid #000;
-    background-color: pink;
-}
+// .box {
+//     border:1px solid #000;
+//     background-color: skyblue;
+// }
 
-.box3 {
-    border:1px solid #000;
-    background-color: rgb(152, 152, 152);
-}
+// .box2 {
+//     border:1px solid #000;
+//     background-color: pink;
+// }
+
+// .box3 {
+//     border:1px solid #000;
+//     background-color: rgb(152, 152, 152);
+// }
