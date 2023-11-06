@@ -1,0 +1,74 @@
+$primary: #E83F3F;
+$dropdown-link-color: #e5e5e5;
+$dropdown-link-hover-color: #000;
+
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+body {
+    background: #141414;
+    /* forbid horizontal scoll */
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.back-arrow {
+    position: fixed;
+    left: 1em;
+    top:1em;
+    z-index: 999;
+}
+
+h1 {
+    font-family: 'Comfortaa', 'sans-serif';  
+}
+
+.figure-img{
+    width: 100%;
+    z-index: 10;
+    position: relative;
+}
+
+.figure-img .top{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 40px;
+    background: linear-gradient(to top, rgba(255, 255, 255, 0), rgb(0, 0, 0));
+}
+
+.figure-img .bottom{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #141414);
+}
+
+.figure-img img{
+    width: 100%;
+}
+
+
+.figure-img .figure-name{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    /* background-color: #fff; */
+    z-index: 100;
+    display: flex;
+}
+
+.figure-img .figure-name .title{
+    margin-left: 5vw;
+    margin-top: 50vh;
+}
+
+.scrollbar-container {
+    max-height: 200px;
+    overflow-y: auto;
+}

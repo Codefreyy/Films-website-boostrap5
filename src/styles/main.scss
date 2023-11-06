@@ -1,18 +1,18 @@
 // customize theme color
 $primary: #E83F3F;
-$info: #f097c7;
 $dropdown-link-color: #e5e5e5;
 $dropdown-link-hover-color: #000;
 
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 
 body {
     background: #141414;
     /* forbid horizontal scoll */
     overflow-x: hidden;
-  }
+}
+
 body::before {
     display: block;
     content: "";
@@ -26,6 +26,7 @@ body::before {
 h1 {
     font-family: 'Comfortaa', 'sans-serif';
 }
+
 footer {
     a {
         color: #808080;
@@ -38,18 +39,3 @@ footer {
     font-weight: 800;
     transform: scale(1.3);
 }
-
-// .box {
-//     border:1px solid #000;
-//     background-color: skyblue;
-// }
-
-// .box2 {
-//     border:1px solid #000;
-//     background-color: pink;
-// }
-
-// .box3 {
-//     border:1px solid #000;
-//     background-color: rgb(152, 152, 152);
-// }
