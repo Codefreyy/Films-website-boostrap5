@@ -13,11 +13,16 @@ body {
     /* forbid horizontal scoll */
     overflow-x: hidden;
   }
-  body::before {
+body::before {
     display: block;
     content: "";
     height: 80px;
-  }
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 h1 {
     font-family: 'Comfortaa', 'sans-serif';
 }
