@@ -11976,3 +11976,29 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  background: #000;
+  /* forbid horizontal scoll */
+  overflow-x: hidden;
+}
+
+body::before {
+  display: block;
+  content: "";
+  height: 80px;
+}
+
+.box {
+  border: 1px solid #000;
+  background-color: skyblue;
+}
+
+.box2 {
+  border: 1px solid #000;
+  background-color: pink;
+}
+
+.box3 {
+  border: 1px solid #000;
+  background-color: rgb(152, 152, 152);
+}

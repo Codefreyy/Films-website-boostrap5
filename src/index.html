@@ -91,8 +91,88 @@
       </nav>
     </header>
 
-    <main></main>
+    <main>
+      <section class="text-light p-5">
+        <div class="container-fluid">
+          <!-- title and rating -->
+          <div class="row">
+            <div class="col-lg-7 col-md-12 col-sm-12 box">
+              <h1>The Shawshank Redemption</h1>
+              <div>1994 R 2h 22m</div>
+            </div>
+            <div class="col-lg-5 col-md-6 col-sm-8 box">
+              <div class="row">
+                <div class="col text-lg-end">
+                  <div>IMDB RATING</div>
+                  <div>9.3/10</div>
+                </div>
+                <div class="col text-lg-end">
+                  <div>Your Rating</div>
+                  <div>Rate</div>
+                </div>
+                <div class="col text-lg-end">
+                  <div>Popularity</div>
+                  <div>104</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6 col-md-12">
+              <div class="row">
+                <div class="col h-100">
+                  <img
+                    class="img-fluid"
+                    src="/assets/imgs/poster.png"
+                    alt="poster"
+                  />
+                </div>
+                <div class="col">
+                  <div class="row box3 h-25">Film info</div>
+                  <div class="row box3 h-75">Director, Actor and summary</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="box2 col-lg-6 d-flex flex-column justify-content-center"
+            >
+              <h5>trailer</h5>
+              <video
+                class="h-80 w-100"
+                controls
+                src="/assets/videos/preview.mp4"
+              ></video>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <footer></footer>
   </body>
+
+  <script>
+    function handleWindowResize() {
+      var windowWidth = window.innerWidth
+
+      if (windowWidth >= 1400) {
+        console.log("XXL")
+      } else if (windowWidth >= 1200) {
+        console.log("XL")
+      } else if (windowWidth >= 992) {
+        console.log("LG")
+      } else if (windowWidth >= 768) {
+        console.log("MD")
+      } else {
+        console.log("SM")
+      }
+    }
+
+    // 添加 resize 事件的监听器
+    window.addEventListener("resize", handleWindowResize)
+
+    // 初始加载时执行一次判断逻辑
+    handleWindowResize()
+  </script>
 </html>
