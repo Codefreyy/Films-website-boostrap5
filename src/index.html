@@ -104,7 +104,7 @@
 
     <main>
       <section class="text-light p-5">
-        <div class="container">
+        <div class="container-sm-fluid">
           <!-- title and rating -->
           <div class="row mb-4">
             <div class="col-lg-8 col-md-12 col-sm-12">
@@ -150,42 +150,48 @@
                 </div>
                 <div class="col-md-8 col-sm-8 col-lg-6">
                   <div class="row">
-                    <div>
-                      <span class="text-secondary">Director: </span>
-                      <a href="/src/director.html">
-                        <span class="text-light">Frank Darabont</span></a
-                      >
-                    </div>
+                    <div class="col d-flex flex-column gap-1">
+                      <div>
+                        <span class="text-secondary">Director: </span>
+                        <a href="/src/director.html">
+                          <span class="text-light">Frank Darabont</span></a
+                        >
+                      </div>
+                      <div>
+                        <span class="text-secondary">Stars: </span>
+                        <a href="/src/actor.html">
+                          <span class="text-light">Tim RobbinsMorgan</span>
+                        </a>
+                        <span> FreemanBob Gunton</span>
+                      </div>
 
-                    <div>
-                      <span class="text-secondary">Writers: </span>
-                      <span class="text-light"> Stephen KingFrank</span>
-                    </div>
-                    <div>
-                      <span class="text-secondary">Stars: </span>
-                      <span class="text-light"
-                        >Tim RobbinsMorgan, FreemanBob Gunton</span
-                      >
-                    </div>
-                    <div>
-                      <span class="text-secondary">Stars: </span>
-                      <a href="/src/actor.html">
-                        <span class="text-light">Tim RobbinsMorgan</span>
-                      </a>
-                      <span>,FreemanBob Gunton</span>
+                      <div>
+                        <span class="text-secondary">Language:</span>
+                        <span class="text-light">English</span>
+                      </div>
                     </div>
                   </div>
-                  <div class="row">
+                  <div class="row mt-2">
+                    <h6 class="text-secondary">Summary</h6>
                     <p>
                       Over the course of several years, two convicts form a
                       friendship, seeking consolation and, eventually,
                       redemption through basic compassion.
                     </p>
                   </div>
+                  <div class="row">
+                    <div class="col">
+                      <button type="button" class="btn btn-primary text-white">
+                        Watch Now
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 d-flex flex-column justify-content-center">
+            <div
+              class="col-lg-6 d-flex mt-2 flex-column justify-content-center"
+            >
               <video
                 class="object-fit-scale"
                 poster="/assets/imgs/video-cover.jpg"
