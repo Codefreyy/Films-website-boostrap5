@@ -25,10 +25,18 @@
       <nav class="navbar navbar-expand-lg bg-black navbar-dark fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand d-none d-md-inline" href="/src/index.html">
-            <img src="/assets/imgs/netflix.png" alt="netflix" width="120em" />
+            <img
+              src="/assets/imgs/netflix.png"
+              alt="Netflix Logo"
+              width="120em"
+            />
           </a>
           <a class="navbar-brand d-incline d-md-none" href="/src/index.html">
-            <img src="/assets/imgs/favicon.png" alt="netflix" width="40em" />
+            <img
+              src="/assets/imgs/favicon.png"
+              alt="Netflix Logo"
+              width="40em"
+            />
           </a>
           <button
             class="navbar-toggler"
@@ -147,7 +155,7 @@
                   <img
                     class="img-fluid"
                     src="/assets/imgs/poster-shawshank.png"
-                    alt="poster"
+                    alt="Poster of Movie Shawshank Redemption"
                   />
                 </div>
                 <div class="col-md-8 col-sm-8 col-lg-6">
@@ -297,30 +305,4 @@
       </div>
     </footer>
   </body>
-
-  <script>
-    function handleWindowResize() {
-      var windowWidth = window.innerWidth
-
-      if (windowWidth >= 1400) {
-        console.log("XXL")
-      } else if (windowWidth >= 1200) {
-        console.log("XL")
-      } else if (windowWidth >= 992) {
-        console.log("LG")
-      } else if (windowWidth >= 768) {
-        console.log("MD")
-      } else if (windowWidth >= 576) {
-        console.log("sm")
-      } else {
-        console.log("none")
-      }
-    }
-
-    // 添加 resize 事件的监听器
-    window.addEventListener("resize", handleWindowResize)
-
-    // 初始加载时执行一次判断逻辑
-    handleWindowResize()
-  </script>
 </html>
