@@ -25,8 +25,7 @@
   <body>
     <header>
       <section class="figure-img">
-        <div class="top"></div>
-        <div class="bottom"></div>
+        <div class="shadow"></div>
         <img src="/assets/imgs/director.png" />
         <div class="figure-name">
           <div class="title d-none d-xxl-block">
@@ -35,7 +34,7 @@
         </div>
       </section>
 
-      <div class="back-arrow display-6">
+      <div class="back-arrow display-6" role="button">
         <a href="./index.html"><i class="bi bi-arrow-left-circle-fill"></i></a>
       </div>
     </header>
@@ -101,9 +100,9 @@
           <div class="col-lg-6 d-flex mt-4 flex-column justify-content-center">
             <video
               class="object-fit-scale"
-              poster="/assets/imgs/video-cover.jpg"
+              poster="/assets/imgs/director-video-poster.png"
               controls
-              src="/assets/videos/preview.mp4"
+              src="/assets/videos/director.mp4"
             ></video>
           </div>
         </div>
@@ -191,29 +190,4 @@
       </div>
     </footer>
   </body>
-  <script>
-    function handleWindowResize() {
-      var windowWidth = window.innerWidth
-
-      if (windowWidth >= 1400) {
-        console.log("XXL")
-      } else if (windowWidth >= 1200) {
-        console.log("XL")
-      } else if (windowWidth >= 992) {
-        console.log("LG")
-      } else if (windowWidth >= 768) {
-        console.log("MD")
-      } else if (windowWidth >= 576) {
-        console.log("sm")
-      } else {
-        console.log("none")
-      }
-    }
-
-    // 添加 resize 事件的监听器
-    window.addEventListener("resize", handleWindowResize)
-
-    // 初始加载时执行一次判断逻辑
-    handleWindowResize()
-  </script>
 </html>

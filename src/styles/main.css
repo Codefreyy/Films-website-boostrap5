@@ -12000,6 +12000,9 @@ footer a {
   color: #808080;
   text-decoration: none;
 }
+footer a:hover {
+  color: #E83F3F;
+}
 
 .text-emphasize {
   font-family: "Comfortaa", "sans-serif";
