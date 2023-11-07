@@ -11983,6 +11983,19 @@ body {
   width: 100vw;
 }
 
+a {
+  color: #e5e5e5;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #E83F3F;
+}
+
+footer a {
+  color: #808080;
+}
+
 ::-webkit-scrollbar {
   display: none;
 }
@@ -12033,12 +12046,4 @@ h1, .h1 {
 .scrollbar-container {
   max-height: 40vh;
   overflow-y: auto;
-}
-
-footer a {
-  color: #808080;
-  text-decoration: none;
-}
-footer a:hover {
-  color: #E83F3F;
 }

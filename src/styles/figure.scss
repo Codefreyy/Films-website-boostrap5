@@ -12,6 +12,19 @@ body {
     width: 100vw;
 }
 
+a {
+    color: #e5e5e5;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $primary;
+}
+
+footer a {
+    color: #808080;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -26,6 +39,8 @@ body {
 h1 {
     font-family: 'Comfortaa', 'sans-serif';  
 }
+
+
 
 .figure-img{
     width: 100%;
@@ -63,15 +78,4 @@ h1 {
 .scrollbar-container {
     max-height: 40vh;
     overflow-y: auto;
-}
-
-footer {
-    a {
-        color: #808080;
-        text-decoration: none;
-    }
-
-    a:hover {
-        color: $primary;
-    }
 }

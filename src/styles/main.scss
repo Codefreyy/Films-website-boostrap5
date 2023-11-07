@@ -19,23 +19,25 @@ body::before {
     height: 80px;
 }
 
+a {
+    color: #e5e5e5;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $primary;
+}
+
+footer a {
+    color: #808080;
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
 
 h1 {
     font-family: 'Comfortaa', 'sans-serif';
-}
-
-footer {
-    a {
-        color: #808080;
-        text-decoration: none;
-    }
-
-    a:hover {
-        color: $primary;
-    }
 }
 
 .text-emphasize {
