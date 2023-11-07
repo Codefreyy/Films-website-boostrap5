@@ -11988,8 +11988,8 @@ body::before {
   height: 80px;
 }
 
-a {
-  color: #e5e5e5;
+footer a {
+  color: #808080;
   text-decoration: none;
 }
 
@@ -11997,8 +11997,9 @@ a:hover {
   color: #E83F3F;
 }
 
-footer a {
-  color: #808080;
+a:focus {
+  outline: 1px solid #FF0000;
+  border-radius: 2px;
 }
 
 ::-webkit-scrollbar {
