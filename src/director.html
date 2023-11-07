@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="/src/styles/figure.css" />
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </head>
-  <body>
+  <body id="top">
     <header>
       <section class="figure-img">
         <div class="shadow"></div>
@@ -38,7 +38,9 @@
       </section>
 
       <div class="back-arrow display-6" role="button">
-        <a href="./index.html"><i class="bi bi-arrow-left-circle-fill"></i></a>
+        <a href="./index.html" aria-label="Back to the home page"
+          ><i class="bi bi-arrow-left-circle-fill"></i
+        ></a>
       </div>
     </header>
 
@@ -57,7 +59,7 @@
         <div class="row row-gap-md-3">
           <div class="col-lg-6 col-md-12">
             <div class="row mt-2">
-              <div class="scrollbar-container">
+              <div class="scrollbar-container" tabindex="0">
                 Three-time Oscar nominee Frank Darabont was born in a refugee
                 camp in 1959 in Montbeliard, France, the son of Hungarian
                 parents who had fled Budapest during the failed 1956 Hungarian
@@ -106,7 +108,14 @@
               poster="/assets/imgs/director-video-poster.png"
               controls
               src="/assets/videos/director.mp4"
-            ></video>
+            >
+              <track
+                kind="captions"
+                src="captions.vtt"
+                srclang="en"
+                label="English captions"
+              />
+            </video>
           </div>
         </div>
 
@@ -121,7 +130,7 @@
                   <img
                     src="/assets/imgs/poster-shawshank.png"
                     class="img-fluid rounded-start h-100"
-                    alt="Poster of movie the shawshank redemption"
+                    alt="Movie poster of the shawshank redemption"
                   />
                 </div>
                 <div class="col-md-8">
@@ -147,7 +156,7 @@
                   <img
                     src="/assets/imgs/mist-cover.png"
                     class="img-fluid rounded-start h-100"
-                    alt="Poster of movie Mist"
+                    alt="Movie poster of Mist"
                   />
                 </div>
                 <div class="col-md-8">
@@ -173,7 +182,7 @@
                   <img
                     src="/assets/imgs/walkingdead-cover.png"
                     class="img-fluid rounded-start h-100"
-                    alt="Poster of movie the Walking Dead"
+                    alt="Movie poster of the Walking Dead"
                   />
                 </div>
                 <div class="col-md-8">
@@ -199,7 +208,7 @@
                   <img
                     src="/assets/imgs/greenmile-cover.png"
                     class="img-fluid rounded-start h-100"
-                    alt="Poster of movie Green Mile"
+                    alt="Movie poster of Green Mile"
                   />
                 </div>
                 <div class="col-md-8">
@@ -225,7 +234,7 @@
                   <img
                     src="/assets/imgs/frankenstein-cover.png"
                     class="img-fluid rounded-start h-100"
-                    alt="Poster of Movie Frankenstein"
+                    alt="Movie poster of Frankenstein"
                   />
                 </div>
                 <div class="col-md-8">
@@ -251,7 +260,7 @@
                   <img
                     src="/assets/imgs/majestic-cover.png"
                     class="img-fluid rounded-start h-100"
-                    alt="Poster of movie The majestic"
+                    alt="Movie poster of The majestic"
                   />
                 </div>
                 <div class="col-md-8">
@@ -273,6 +282,15 @@
       </div>
     </main>
     <footer>
+      <aside>
+        <a
+          href="#top"
+          class="btn btn-secondary position-fixed bottom-0 end-0 m-5"
+          aria-label="Back to page top"
+        >
+          <i class="bi bi-arrow-bar-up"></i>
+        </a>
+      </aside>
       <div class="container text-white text-center">
         <div
           class="row mt-4 p-lg-5 p-md-4 p-3 text-center d-flex justify-content-center"

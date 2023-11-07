@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="/src/styles/figure.css" />
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </head>
-  <body>
+  <body id="top">
     <header>
       <section class="figure-img">
         <div class="shadow"></div>
@@ -33,11 +33,13 @@
       </section>
 
       <div class="back-arrow display-6" role="button">
-        <a href="./index.html"><i class="bi bi-arrow-left-circle-fill"></i></a>
+        <a href="./index.html" aria-label="Go back to homepage"
+          ><i class="bi bi-arrow-left-circle-fill"></i
+        ></a>
       </div>
     </header>
 
-    <main>
+    <main role="main">
       <div class="container text-light">
         <div class="row mt-3">
           <div class="col">
@@ -52,7 +54,7 @@
         <div class="row row-gap-md-3">
           <div class="col-lg-6 col-md-12">
             <div class="row mt-2">
-              <div class="scrollbar-container">
+              <div class="scrollbar-container" tabindex="0">
                 Born in West Covina, California, but raised in New York City,
                 Tim Robbins is the son of former The Highwaymen singer Gil
                 Robbins and actress Mary Robbins (née Bledsoe). Robbins studied
@@ -78,13 +80,20 @@
               poster="/assets/imgs/director-video-poster.png"
               controls
               src="/assets/videos/director.mp4"
-            ></video>
+            >
+              <track
+                kind="captions"
+                src="captions.vtt"
+                srclang="en"
+                label="English captions"
+              />
+            </video>
           </div>
         </div>
         <h2 class="border-start border-3 ps-2 mb-3 mt-5 border-primary">
           Known for
         </h2>
-        <div class="row row-cols-2 row-cols-xl-3 g-4">
+        <div class="row row-cols-2 row-cols-lg-3 g-4">
           <div class="col">
             <div class="card mb-3 bg-dark text-light">
               <div class="row g-0">
@@ -253,6 +262,15 @@
       </div>
     </main>
     <footer>
+      <aside>
+        <a
+          href="#top"
+          class="btn btn-secondary position-fixed bottom-0 end-0 m-5"
+          aria-label="Back to page top"
+        >
+          <i class="bi bi-arrow-bar-up"></i>
+        </a>
+      </aside>
       <div class="container text-white text-center">
         <div
           class="row mt-4 p-lg-5 p-md-4 p-3 text-center d-flex justify-content-center"

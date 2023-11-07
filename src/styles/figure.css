@@ -11992,10 +11992,6 @@ a:hover {
   color: #E83F3F;
 }
 
-footer a {
-  color: #808080;
-}
-
 ::-webkit-scrollbar {
   display: none;
 }
@@ -12046,4 +12042,13 @@ h1, .h1 {
 .scrollbar-container {
   max-height: 40vh;
   overflow-y: auto;
+}
+
+footer a {
+  color: #808080;
+}
+
+footer a:focus {
+  outline: 1px solid #FF0000;
+  border-radius: 2px;
 }
