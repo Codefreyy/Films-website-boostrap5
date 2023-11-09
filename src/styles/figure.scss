@@ -1,3 +1,4 @@
+// Customizing boostrap default colors
 $primary: #E83F3F;
 $dropdown-link-color: #e5e5e5;
 $dropdown-link-hover-color: #000;
@@ -21,6 +22,8 @@ a:hover {
     color: $primary;
 }
 
+
+// Hide the scrollbar
 ::-webkit-scrollbar {
     display: none;
 }
@@ -40,6 +43,7 @@ h1 {
     font-family: 'Comfortaa', 'sans-serif';  
 }
 
+// Actor and director page img shadow.
 .figure-img{
     width: 100%;
     z-index: 10;

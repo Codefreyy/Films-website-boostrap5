@@ -1,4 +1,4 @@
-// customize theme color
+// Customize theme color
 $primary: #E83F3F;
 $dropdown-link-color: #e5e5e5;
 $dropdown-link-hover-color: #000;
@@ -13,6 +13,7 @@ body {
     overflow-x: hidden;
 }
 
+// Fix the problem of main body not showing completely.
 body::before {
     display: block;
     content: "";
