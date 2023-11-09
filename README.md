@@ -2,7 +2,31 @@
 
 This project is a website about the film "The Shawshank Redemption", selected from the IMDB 5000 Movie Dataset. The website is built with Bootstrap5 and consists of three pages: Movie Details (`index.html`), Actors (`actor.html`), and Director (`director.html`).
 
-## Project Dependencies
+## Project Structure and Dependencies
+
+My project strutures like this:
+
+```
+├── public
+│ ├── imgs
+│ └── videos
+└── src
+  └── styles
+  ├── director.html
+  ├── actor.html
+├── index.html
+```
+
+- index.html: This is the deployment entry file.
+- public: This folder is used to store static assets.
+  - imgs: This subfolder within 'public' contains image resources.
+  - videos: This subfolder within 'public' contains video resources.
+- src: This folder contains the other HTML files and a 'styles' folder.
+  - actor.html: An HTML file within 'src'.
+  - director.html: Another HTML file within 'src'.
+  - styles: This subfolder within 'src' is used to store Sass files and the CSS files.
+
+There are three dependencies:
 
 - Bootstrap 5
 - Bootstrap Icons
@@ -10,8 +34,13 @@ This project is a website about the film "The Shawshank Redemption", selected fr
 
 To run the project, perform the following steps:
 
-1. Run `npm i` to install dependencies.
-2. If you're using VS Code, install the Live Server extension from Extensions and open Live Server. If you don't use Live Server, you can directly open `index.html` in your browser.
+Local Setup:
+(1) Open the "moviesJoy" folder using your preferred IDE.
+(2) Run npm i to install the necessary dependencies.
+(3) Install the Live Server extension and launch Live Server. Please note that opening index.html directly or not installing the dependencies may affect correct display.
+
+Deployed Website:
+The project is also available online at: https://student230011113-responsivefilm-codefreyy.vercel.app/
 
 ## Pages Summary
 

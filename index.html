@@ -6,24 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FilmsJoy</title>
     <link rel="icon" type="image/x-icon" href="/public/imgs/favicon.png" />
-    <!-- google font -->
+    <!-- Importing Google Font 'Comfortaa' -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <!-- Importing Boostrap Icons -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
     />
+    <!-- Importing css file (compiled by sass live complier) -->
     <link rel="stylesheet" href="/src/styles/main.css" />
+    <!-- Importing this to enable Bootstrap's native JavaScript components and the positioning features from Popper.js. -->
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
   </head>
+  <!-- There is a Back To Top button using href="#top" to navigate to the top.-->
   <body id="top">
     <header>
+      <!-- The navbar expands when screen size is lg an larger, and folds when screen size is smaller.-->
       <nav class="navbar navbar-expand-lg bg-black navbar-dark fixed-top">
         <div class="container-fluid">
+          <!-- The big Netflix logo appears when screen size reaches md. -->
           <a class="navbar-brand d-none d-md-inline" href="/public/index.html">
             <img
               src="/public/imgs/netflix.png"
@@ -31,6 +37,7 @@
               width="120"
             />
           </a>
+          <!-- The small Netflix logo only appears when screen size is smaller than md. -->
           <a class="navbar-brand d-incline d-md-none" href="/public/index.html">
             <img
               src="/public/imgs/favicon.png"
@@ -38,6 +45,7 @@
               width="36"
             />
           </a>
+          <!-- For toggling the navbar items menu -->
           <button
             class="navbar-toggler"
             type="button"
@@ -49,16 +57,14 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+          <!-- Navbar menu items list -->
           <div
             class="collapse navbar-collapse justify-content-md-between"
             id="navbarSupportedContent"
           >
             <ul class="navbar-nav d-flex p-3">
               <li class="nav-item">
-                <a
-                  class="nav-link"
-                  aria-current="page"
-                  href="/public/index.html"
+                <a class="nav-link" aria-current="page" href="/index.html"
                   >Home</a
                 >
               </li>
@@ -122,8 +128,13 @@
     <main>
       <section class="text-light p-3 pt-5">
         <div class="container-md">
-          <!-- title and rating -->
           <div class="row mb-4">
+            <!-- Movie name(A) and rating(B): 
+            "A" takes 8 cols when screen size is lg or above
+            takes 12 cols(a whole row) when screen size is smaller than lg;
+            "B" is in the same row as A and taks 4cols when screen size is lg or above
+            takes left 6 cols in the second row when screen size is smaller than lg
+            -->
             <div class="col-lg-8 col-md-12 col-sm-12">
               <h1>The Shawshank Redemption</h1>
               <div>
@@ -136,6 +147,7 @@
             </div>
             <div class="col-lg-4 col-md-6 col-sm-8">
               <div class="row">
+                <!-- Align in the right when screen size is lg or above-->
                 <div class="col text-lg-end">
                   <figure class="mt-2">
                     <figcaption class="small text-secondary">
@@ -165,10 +177,15 @@
               </div>
             </div>
           </div>
-
           <div class="row row-gap-md-3">
+            <!-- Movie poster and info:
+             takes 6 cols at screen size lg or above
+             takes 12 cols (a whole row) at screen size, which means
+            the movie trailer will also be in a new row itself. -->
             <div class="col-lg-6 col-md-12">
               <div class="row">
+                <!-- The poster takes 4 at screen size smaller than lg,
+                and takes 6 cols when lg or above. -->
                 <div class="col-md-4 col-sm-4 col-lg-6 h-100">
                   <img
                     class="img-fluid"
@@ -207,7 +224,7 @@
                     </div>
                   </div>
                   <div class="row mt-2">
-                    <h6 class="text-secondary">Summary</h6>
+                    <h6 class="text-secondary">Synopsis</h6>
                     <p>
                       Over the course of several years, two convicts form a
                       friendship, seeking consolation and, eventually,
@@ -230,6 +247,7 @@
                 </div>
               </div>
             </div>
+            <!-- Movie trailer -->
             <div
               class="col-lg-6 d-flex mt-2 flex-column justify-content-center"
             >
@@ -253,6 +271,8 @@
     </main>
 
     <footer>
+      <!-- A back to top button, for screen readers to navigate to 
+        the top of the main content before going through all 16 <a></a> links-->
       <aside>
         <a
           href="#top"
@@ -266,6 +286,8 @@
         <div
           class="row mt-4 p-lg-5 p-md-4 p-3 text-center d-flex justify-content-center"
         >
+          <!-- Four cols. From screen size xxs to md, two cols take up one row.
+        When screen size reaches md and above, four cols takes up on row. -->
           <div class="col-6 col-md-3">
             <ul class="text-start list-unstyled">
               <li>
